@@ -1,0 +1,98 @@
+/* Variables de color */
+:root {
+    --bg: #0f1720;
+    --card: #0b1220;
+    --accent: #00d4ff;
+    --text: #ffffff;
+    --muted: #94a3b8;
+    --error: #ff4d4f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #0f1720 0%, #1e293b 100%);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.auth-box {
+    background: var(--card);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.auth-box h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: var(--accent);
+}
+
+.alert {
+    background-color: var(--error);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.auth-box input[type="email"],
+.auth-box input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text);
+    font-size: 16px;
+}
+
+.auth-box input::placeholder {
+    color: var(--muted);
+}
+
+.auth-box .btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: var(--accent);
+    color: var(--bg);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.auth-box .btn:hover {
+    background: #00b8e6;
+}
+
+.auth-box p {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.auth-box a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.auth-box a:hover {
+    color: #00b8e6;
+}
