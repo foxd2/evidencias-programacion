@@ -1,0 +1,261 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #082c3a;
+    color: #fff;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #24252a;
+    padding-left: 2vw;
+}
+
+.cont-ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    padding: 1.5vw;
+    transition:  all .3s ease 0s;
+    font-size: small;
+}
+
+li:hover {
+    background-color: #008849;
+}
+
+.develop {
+    position: relative;
+}
+
+.ul-second {
+    display: none;
+    position: absolute;
+    margin-top: 1.5vw;
+    z-index: 2;
+}
+
+
+.ul-second > li {
+    width: 190px;
+    transform: translateX(-20px);
+    border-bottom:solid 1px #fff ;
+    text-align: center;
+    background-color: #24252a;
+}
+
+.ul-second > li:hover {
+    background-color: #008849;
+}
+
+.develop:hover > .ul-second {
+    display: block;
+}
+
+.ul-third {
+    position: absolute;
+    transform: translateX(100%);
+    right: 0;
+    top: 40%;
+    display: none;
+    background-color: #24252a;
+}
+
+.ul-third > li {
+    padding: 1.5vw;
+    border-bottom: solid 1px #fff;
+}
+
+.front:hover > .ul-third {
+    display: block;
+}
+
+@media (max-width:900px) {
+    .logo-danicodex {
+        display: none;
+    }
+}
+
+.container > button {
+    background-color: transparent;
+    border: 3px ridge #149CEA;
+    border-radius: 0.3em;
+    color: #fff;
+    padding:15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    outline: none;
+    width: 10em;
+    position: relative;
+    height: 3.5em;
+    transition: 1s;
+    font-weight: bold;
+}
+
+.container > button:hover::before, button:hover::after {
+    transform: scale(0);
+}
+
+.container > button:hover {
+    background-color: #07eeff;
+}
+
+.button2, .button3, .button4{
+    background-color: transparent;
+}
+
+.container{
+    text-align: right;
+}
+
+.slide{
+    margin-top: 10px;
+}
+
+.carousel-item > img{
+    height: 75vh;
+    width: 224vh;
+    padding: 0 10px 0 20px;
+}
+
+h2{
+    text-align: center;
+    font-size: larger;
+    color: #f50404;
+}
+
+.slide{
+    z-index: 1;
+}
+
+.container-items{
+    max-width: 950px;
+    width: 100%;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+.container-items .main-card{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200%;
+    transition: 1s;
+    justify-items: center;
+}
+
+#two:checked ~ .main-card{
+    margin-left: -100%;
+}
+
+.container-items .main-card .cards{
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    justify-content: space-between;
+}
+
+.main-card .cards .card{
+    width: calc(100% / 3 - 10px);
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+
+}
+
+.main-card .cards .card:hover{
+    transform: translateY(-15px);
+}
+
+
+
+.cards .card .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.cards .card .content .img{
+    height: 130px;
+    width: 130px;
+    padding: 3px;
+    margin-bottom: 14px;
+}
+
+a > img{
+    height: 100%;
+    width: 110%;
+    object-fit: cover;
+    padding: 0 10px 1px 5px;
+}
+
+.card .content .name{
+    font-size: 20px;
+}
+
+.card .content .job{
+    font-size: 20px;
+    color: #f80b13;
+}
+
+.container-items .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.button label{
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    background: #fff;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.button label.active{
+    width: 35px;
+}
+
+#one:checked ~ .button .one{
+    width: 35px;
+}
+
+#one:checked ~ .button .two{
+    width: 15px;
+}
+
+#two:checked ~ .button .one{
+    width: 15px;
+}
+
+#two:checked ~ .button .two{
+    width: 35px;
+}
+
+input[type="radio"]{
+    display: none;
+}

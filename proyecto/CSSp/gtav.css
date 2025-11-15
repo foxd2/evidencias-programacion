@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #082c3a;
+    color: #fff;
+    padding: 20px;
+}
+
+.sipnosis{
+    max-width: 600px;
+    padding: 20px;
+    
+}
+
+.desc > p {
+    padding: 10px;
+    max-width: 900px;
+}
+
+.req > p{
+    padding: 10px;
+    max-width: 900px;  
+}

@@ -1,0 +1,158 @@
+/* Configuración base */
+body {
+    background-color: #1b2838;
+    color: #c7d5e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 70%;
+    padding: 10px;
+    background-color: #2a475e;
+    border: 1px solid #1b2838;
+    color: #c7d5e0;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-input::placeholder {
+    color: #8198ad;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #66c0f4;
+    border: none;
+    color: #1b2838;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #428bca;
+    color: #fff;
+}
+
+/* Grid de juegos */
+.game-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #2a475e;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%; /* Ajusta el ancho para que las tarjetas se alineen en 4 columnas */
+    max-width: 250px; /* Asegúrate de que el tamaño de la tarjeta se mantenga constante */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 3px solid #66c0f4;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    color: #66c0f4;
+    margin: 10px 0;
+}
+
+.card-text {
+    color: #c7d5e0;
+    margin-bottom: 15px;
+}
+
+/* Botones en las tarjetas */
+.btn {
+    background-color: #66c0f4;
+    color: #1b2838;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #428bca;
+    color: #fff;
+}
+
+/* Estilos para Modales */
+.modal-content {
+    background-color: #2a475e;
+    color: #c7d5e0;
+    border-radius: 5px;
+    border: none;
+}
+
+.modal-header {
+    border-bottom: 1px solid #1b2838;
+}
+
+.modal-header .close {
+    color: #c7d5e0;
+}
+
+.modal-title {
+    color: #66c0f4;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.modal-body p {
+    color: #c7d5e0;
+}
+
+.modal-footer {
+    border-top: 1px solid #1b2838;
+}
+
+.modal-footer .btn {
+    background-color: #66c0f4;
+    color: #1b2838;
+}
+
+.modal-footer .btn:hover {
+    background-color: #428bca;
+    color: #fff;
+}
